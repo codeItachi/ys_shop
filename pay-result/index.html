@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>支付结果</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+<style>
+
+</style>
+<body>
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page" >
+        <!-- 这里是页面内容区 -->
+        <div class="content pay-result">
+            <div class="card result">
+                <div class="card-header result-header ">LED传媒联盟</div>
+                <div class="card-content result-content">
+                    <div class="card-content-inner result-inner">
+                        <div class="cost-date"><span class="pay-day"></span><span>消费成功</span></div>
+                        <div class="cost-result">￥240</div>
+                        <div class="cost-code">支付码2018</div>
+                    </div>
+                </div>
+                <div class="card-footer result-footer"><a href="#" class="button button-big button-fill button-success">马上去设置广告</a></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- popup, panel 等放在这里 -->
+<div class="panel-overlay">
+
+</div>
+
+
+<!-- Left Panel with Reveal effect -->
+<div class="panel panel-left panel-reveal">
+
+</div>
+
+
+</body>
+<script type='text/javascript' src='http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type="text/javascript" src="http://g.alicdn.com/msui/sm/0.6.2/js/sm-city-picker.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var today = new Date();
+    var min = today.getMinutes() > '9' ? today.getMinutes() : '0' + today.getMinutes();
+    var mytime=today.getHours()+":"+ min;
+    $('.pay-day').html(mytime)
+</script>
+</html>
